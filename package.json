@@ -1,0 +1,56 @@
+{
+    "name": "skibidilang",
+    "displayName": "SkibidiLang",
+    "description": "Language support for SkibidiLang",
+    "version": "0.0.1",
+    "publisher": "skibidilang",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AirmailSoap3209/SkibidiLang"
+    },
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "main": "./extension.js",
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:skibidilang"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "skibidilang",
+                "aliases": [
+                    "SkibidiLang",
+                    "skibidilang"
+                ],
+                "extensions": [
+                    ".br"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "skibidilang",
+                "scopeName": "source.skibidilang",
+                "path": "./syntaxes/skibidilang.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "skibidilang",
+        "language"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/vscode": "^1.74.0",
+        "vscode": "^1.1.37"
+    }
+}

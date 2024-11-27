@@ -1,0 +1,63 @@
+{
+    "name": "SkibidiLang",
+    "scopeName": "source.skibidilang",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#numbers"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control",
+                    "match": "\\b(no_cap|ong|fr_fr|cap)\\b"
+                },
+                {
+                    "name": "storage.type",
+                    "match": "\\b(rizz)\\b"
+                },
+                {
+                    "name": "entity.name.function",
+                    "match": "\\b(bussin|yeet)\\b"
+                },
+                {
+                    "name": "support.function",
+                    "match": "\\b(skibidi|whats_up_unc)\\b"
+                },
+                {
+                    "name": "keyword.operator",
+                    "match": "\\b(fanum_tax|ohio|gyatt|ratio|alpha|beta|sigma)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "comments": {
+            "name": "comment.line.double-slash",
+            "match": "//.*$"
+        },
+        "numbers": {
+            "name": "constant.numeric",
+            "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+    }
+}
