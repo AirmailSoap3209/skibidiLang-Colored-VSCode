@@ -3,6 +3,7 @@ const vscode = require('vscode');
 
 function activate(context) {
     console.log('SkibidiLang extension is now active!');
+    
 }
 
 function deactivate() {}

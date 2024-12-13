@@ -83,8 +83,8 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.number-sign.skibidilang",
-                    "match": "#.*$"
+                    "name": "comment.line.custom.skibidilang",
+                    "match": "dont_end_my_mewing_streak_bruh.*$"
                 }
             ]
         },
