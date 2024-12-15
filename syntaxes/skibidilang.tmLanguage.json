@@ -84,7 +84,7 @@
             "patterns": [
                 {
                     "name": "comment.line.custom.skibidilang",
-                    "match": "dont_end_my_mewing_streak_bruh.*$"
+                    "match": "mew.*$"
                 }
             ]
         },
